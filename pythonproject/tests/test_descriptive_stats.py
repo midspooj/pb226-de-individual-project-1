@@ -14,7 +14,7 @@ def test_execute_all_functions():
 
     #Add your assert statements here
     # For example:
-    assert isinstance(results, <polars.dataframe.frame.DataFrame>), "Error: Incorrect data type returned"
+    assert isinstance(results, polars.dataframe.frame.DataFrame), "Error: Incorrect data type returned"
 
 if __name__ == '__main__':
     test_execute_all_functions()

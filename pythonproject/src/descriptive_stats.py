@@ -1,3 +1,5 @@
+#python script to call all the functions inside lib.py
+
 import lib
 
 def execute_all_functions():

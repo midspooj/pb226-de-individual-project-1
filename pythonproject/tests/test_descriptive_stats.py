@@ -1,6 +1,6 @@
 import sys
 import os
-
+import polars 
 
 # Add the relative path to the "src" folder so that we can import descriptive_stats.py
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))

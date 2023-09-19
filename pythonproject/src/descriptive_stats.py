@@ -3,6 +3,7 @@
 import lib
 
 def execute_all_functions():
+
     # Load CSV Data
     og_csv_path = r'https://raw.githubusercontent.com/midspooj/pb226-de-miniproject-3/main/country_wise_latest.csv'
     df = lib.load_csv_data(og_csv_path)

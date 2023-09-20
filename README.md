@@ -1,5 +1,10 @@
 # Data Handling With Polars - A COVID-19 Example
+
 [![Format](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/format.yml/badge.svg)](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/format.yml)
+[![Lint](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/lint.yml/badge.svg)](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/lint.yml)
+[![OnInstall](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/install.yml/badge.svg)](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/install.yml)
+[![Test](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/test.yml/badge.svg)](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/test.yml)
+
 ## Introduction
 
 In mini-project 3, my primary focus was on testing and leveraging two core features of Polars:

@@ -1,4 +1,4 @@
-# Data Handling With Polars - A COVID-19 Example
+# Continous Integration with Github Actions: Using Data Handling with Polars
 
 [![Format](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/format.yml/badge.svg)](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/format.yml)
 [![Lint](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/lint.yml/badge.svg)](https://github.com/midspooj/pb226-de-individual-project-1/actions/workflows/lint.yml)
@@ -8,17 +8,46 @@
 ## Youtube Video Walkthrough - Link: https://youtu.be/IZeC7uZjEQY
 
 ## Introduction
+Continous Integration with Github Actions performs two important functions:
+1. Early Detection of Issues:
+CI helps catch bugs, style violations, and integration problems early in the development process, reducing the chances of merging faulty code.
 
-In mini-project 3, my primary focus was on testing and leveraging two core features of Polars:
+2. Faster Development Cycle:
+Developers can merge their changes more frequently, leading to quicker feedback loops and faster delivery of features or bug fixes.
 
-1. **Performance Optimization**  
-   Polars is meticulously engineered for high-performance data manipulation, showcasing remarkable efficiency in handling extensive datasets. It's robust capabilities surpass those of traditional libraries like Pandas, making it an excellent choice for large-scale data processing.
+GitHub workflows are essential for automating various tasks in software development.  
+In this project, the importance of Continous Integration (CI) with Github Actions is explored:
+## Format:
 
-2. **Lazy Evaluation Strategy**  
-   Polars adopts a lazy evaluation approach, deferring the execution of operations until their results are explicitly required. This methodology contributes to more efficient memory utilization, especially beneficial in scenarios involving complex data processing pipelines.
+This step ensures that the codebase adheres to a consistent style guide, making it easier to read and maintain.
 
-## Dataset Selection
-To rigorously test these features, I opted for a substantially large dataset sourced from Kaggle, which served as a benchmark for evaluating the prowess of Polars in comparison to other data manipulation libraries.
+## Lint:
+
+Linting checks the code for potential errors, bugs, or style violations, helping maintain code quality and consistency.
+
+## Install:
+
+Installing dependencies ensures that the project has all the required libraries and packages to run successfully.
+
+## Test:
+
+Testing involves running automated tests to verify that the code functions correctly and meets the specified requirements.  
+
+All four of these workflows pass for this project, as is seen from the badges on the top of this README file.
+
+# Shared Common Script - Lib.py
+The script lib.py contains contains three different functionalities, broken down into functions:
+1. load_csv_data: Loads the data from a csv file for processing
+2. visualize_scatter_plot: Visualizes a scatter pot using the package matplotlib
+3. calculate_summary statistics: Returns the summary statistics of the scatter plot generated
+
+# Python script - descriptive_stats.py
+
+This is a simple python script that imports lib, and uses the functions inside it. 
+
+# Jupyter Notebook - des_stats_notebook.ipynb
+
+A Jupyter Notebook that helps in easy visualization of the code, followed by the scatter plot and the summary statistics table for different parameters.
 
 # Dataset Overview
 
@@ -69,8 +98,7 @@ This is the generated scatterplot for this dataset:
 ![image](https://github.com/midspooj/pb226-de-miniproject-3/assets/142264378/14e74138-1a07-4c4c-b7f3-44dbd50ccdc2)  
 
 # Key Takeaways
-
-This assignment provided valuable insights into the significance of Polars, particularly its efficiency in handling large datasets. It served as a practical demonstration of how to choose the appropriate library for specific dataset sizes and complexities, highlighting the importance of selecting the right tool for efficient data manipulation and analysis.
+Continuous Integration (CI) with GitHub Actions is crucial for streamlining the development process. It automates tasks like testing, formatting, and dependency management, ensuring that code changes integrate seamlessly and without errors. This leads to faster, more reliable development cycles, enabling teams to deliver high-quality software with confidence and efficiency.
 
 
 
